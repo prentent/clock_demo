@@ -79,7 +79,7 @@ function drawDateTime() {
 function drawHoursLine(hour) {
     ctx.beginPath();
     ctx.lineWidth = hoursLineWidth;
-    var theta = ((hour % 12) - 3) * (Math.PI * 2) / 12;
+    var theta = ((hour % 12) - 2) * (Math.PI * 2) / 12;
     var x = clockRadius * Math.cos(theta);
     var y = clockRadius * Math.sin(theta);
     ctx.moveTo(-0.10 * x, -0.10 * y);
