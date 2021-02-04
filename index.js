@@ -44,7 +44,10 @@ function startDraw() {
 
 function drawClock() {
     ctx.clearRect(-clockRadius, -clockRadius, 2 * clockRadius, 2 * clockRadius);
-
+    //火狐浏览器问题
+    ctx.fillStyle = "white";
+    ctx.fillRect(-clockRadius, -clockRadius, 2 * clockRadius, 2 * clockRadius);
+    
     drawCalibration();
     drawHourText();
 
